@@ -1,13 +1,13 @@
-variable "name_length" {
+variable "computer_name" {
   type    = "string"
-  default = "10"
+  default = "1"
 }
 
-resource "random_pet" "server" {
-  length = "${var.name_length}"
+resource "random_pet" "computers" {
+  length = "${var.computer_name}"
 }
 
 output "name" {
-  value = "${random_pet.server.id}"
+  value = "${random_pet.computers.id}"
 }
       
