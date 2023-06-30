@@ -1,6 +1,6 @@
 variable "computer_name" {
  # type    = "string"
-  default = "5"
+  default = "15"
 }
 
 resource "random_pet" "computers" {
